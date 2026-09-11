@@ -1,0 +1,57 @@
+pre_type,post_type,weight,sign,spatial_rule,offset_dx,offset_dy,citation_key,notes
+L1,Mi1,1.0,excitatory,same_column,0,0,maisak2013,L1->Mi1 ON-pathway input (real hemibrain/FlyWire wiring)
+L1,Mi4,0.6,excitatory,same_column,0,0,maisak2013,L1->Mi4 ON-pathway input
+L1,Mi9,0.5,excitatory,same_column,0,0,maisak2013,L1->Mi9 ON-pathway input (null-direction inhibitory channel source)
+L2,Tm1,1.0,excitatory,same_column,0,0,shinomiya2019,L2->Tm1 OFF-pathway input
+L2,Tm4,0.5,excitatory,same_column,0,0,shinomiya2019,L2->Tm4 OFF-pathway input
+L3,Tm9,0.6,excitatory,same_column,0,0,shinomiya2019,L3->Tm9 OFF-pathway input (null-direction inhibitory channel source)
+Mi1,T4a,1.0,excitatory,same_column,0,0,maisak2013,ON-pathway direct excitatory drive (preferred-direction channel: front-to-back)
+Mi1,T4b,1.0,excitatory,same_column,0,0,maisak2013,ON-pathway direct excitatory drive (preferred-direction channel: back-to-front)
+Mi1,T4c,1.0,excitatory,same_column,0,0,maisak2013,ON-pathway direct excitatory drive (preferred-direction channel: upward)
+Mi1,T4d,1.0,excitatory,same_column,0,0,maisak2013,ON-pathway direct excitatory drive (preferred-direction channel: downward)
+Mi4,T4a,0.5,excitatory,same_column,0,0,shinomiya2019,ON-pathway sustained excitatory support
+Mi4,T4b,0.5,excitatory,same_column,0,0,shinomiya2019,ON-pathway sustained excitatory support
+Mi4,T4c,0.5,excitatory,same_column,0,0,shinomiya2019,ON-pathway sustained excitatory support
+Mi4,T4d,0.5,excitatory,same_column,0,0,shinomiya2019,ON-pathway sustained excitatory support
+Mi9,T4a,0.9,inhibitory,neighbor_offset,-1,0,haag2016,Null-direction delayed inhibition (Barlow-Levick-type mechanism): source column offset opposite T4a's preferred (front-to-back) direction
+Mi9,T4b,0.9,inhibitory,neighbor_offset,1,0,haag2016,Null-direction delayed inhibition: offset opposite T4b's preferred (back-to-front) direction
+Mi9,T4c,0.9,inhibitory,neighbor_offset,0,-1,haag2016,Null-direction delayed inhibition: offset opposite T4c's preferred (upward) direction
+Mi9,T4d,0.9,inhibitory,neighbor_offset,0,1,haag2016,Null-direction delayed inhibition: offset opposite T4d's preferred (downward) direction
+Tm1,T5a,1.0,excitatory,same_column,0,0,maisak2013,OFF-pathway direct excitatory drive (preferred-direction channel: front-to-back)
+Tm1,T5b,1.0,excitatory,same_column,0,0,maisak2013,OFF-pathway direct excitatory drive (preferred-direction channel: back-to-front)
+Tm1,T5c,1.0,excitatory,same_column,0,0,maisak2013,OFF-pathway direct excitatory drive (preferred-direction channel: upward)
+Tm1,T5d,1.0,excitatory,same_column,0,0,maisak2013,OFF-pathway direct excitatory drive (preferred-direction channel: downward)
+Tm4,T5a,0.5,excitatory,same_column,0,0,shinomiya2019,OFF-pathway sustained excitatory support
+Tm4,T5b,0.5,excitatory,same_column,0,0,shinomiya2019,OFF-pathway sustained excitatory support
+Tm4,T5c,0.5,excitatory,same_column,0,0,shinomiya2019,OFF-pathway sustained excitatory support
+Tm4,T5d,0.5,excitatory,same_column,0,0,shinomiya2019,OFF-pathway sustained excitatory support
+Tm9,T5a,0.9,inhibitory,neighbor_offset,-1,0,haag2016,Null-direction delayed inhibition: offset opposite T5a's preferred (front-to-back) direction
+Tm9,T5b,0.9,inhibitory,neighbor_offset,1,0,haag2016,Null-direction delayed inhibition: offset opposite T5b's preferred (back-to-front) direction
+Tm9,T5c,0.9,inhibitory,neighbor_offset,0,-1,haag2016,Null-direction delayed inhibition: offset opposite T5c's preferred (upward) direction
+Tm9,T5d,0.9,inhibitory,neighbor_offset,0,1,haag2016,Null-direction delayed inhibition: offset opposite T5d's preferred (downward) direction
+T4a,HSN,0.8,excitatory,pool_all,0,0,schnell2010,Front-to-back ON motion drives horizontal-system yaw signal
+T4b,HSN,0.8,inhibitory,pool_all,0,0,schnell2010,Back-to-front ON motion opposes horizontal-system yaw signal (directional opponency)
+T5a,HSN,0.8,excitatory,pool_all,0,0,schnell2010,Front-to-back OFF motion drives horizontal-system yaw signal
+T5b,HSN,0.8,inhibitory,pool_all,0,0,schnell2010,Back-to-front OFF motion opposes horizontal-system yaw signal
+T4a,HSE,0.6,excitatory,pool_all,0,0,schnell2010,HSE contributes to horizontal-system population code
+T4b,HSE,0.6,inhibitory,pool_all,0,0,schnell2010,HSE directional opponency
+T4a,HSS,0.5,excitatory,pool_all,0,0,schnell2010,HSS contributes to horizontal-system population code
+T4b,HSS,0.5,inhibitory,pool_all,0,0,schnell2010,HSS directional opponency
+T4c,VS1,0.8,excitatory,pool_all,0,0,krapp1996,Upward ON motion drives vertical-system roll/pitch signal
+T4d,VS1,0.8,inhibitory,pool_all,0,0,krapp1996,Downward ON motion opposes vertical-system signal (directional opponency)
+T5c,VS1,0.8,excitatory,pool_all,0,0,krapp1996,Upward OFF motion drives vertical-system signal
+T5d,VS1,0.8,inhibitory,pool_all,0,0,krapp1996,Downward OFF motion opposes vertical-system signal
+T4c,VS4,0.7,excitatory,pool_all,0,0,krapp1996,VS4 contributes to vertical-system population code (contralateral receptive field)
+T4d,VS4,0.7,inhibitory,pool_all,0,0,krapp1996,VS4 directional opponency
+T4c,VS6,0.6,excitatory,pool_all,0,0,krapp1996,VS6 contributes to vertical-system population code
+T4d,VS6,0.6,inhibitory,pool_all,0,0,krapp1996,VS6 directional opponency
+HSN,DN_yaw_L,1.0,excitatory,pool_all,0,0,suver2016,Horizontal-system drives contraversive yaw steering descending neuron
+HSE,DN_yaw_R,1.0,excitatory,pool_all,0,0,suver2016,Horizontal-system drives contraversive yaw steering descending neuron
+HSS,DN_yaw_L,0.5,excitatory,pool_all,0,0,suver2016,Horizontal-system population contribution to yaw DN pool
+HSN,DN_roll_L,0.4,excitatory,pool_all,0,0,fenk2014,Horizontal-system secondary contribution to roll stabilization
+HSE,DN_roll_R,0.4,excitatory,pool_all,0,0,fenk2014,Horizontal-system secondary contribution to roll stabilization
+VS1,DN_pitch_up,1.0,excitatory,pool_all,0,0,suver2016,Vertical-system drives pitch-correcting descending neuron
+VS4,DN_pitch_down,1.0,excitatory,pool_all,0,0,suver2016,Vertical-system drives pitch-correcting descending neuron
+VS6,DN_roll_L,0.7,excitatory,pool_all,0,0,suver2016,Vertical-system contributes to roll-correcting descending neuron
+VS1,DN_roll_R,0.5,excitatory,pool_all,0,0,suver2016,Vertical-system secondary roll contribution
+VS4,DN_thrust_mod,0.5,excitatory,pool_all,0,0,krapp1996,Vertical-system (expansion-sensitive) contributes to thrust/altitude modulation
